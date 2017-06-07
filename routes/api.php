@@ -21,8 +21,8 @@ $api = app('Dingo\Api\Routing\Router');
 
 //Show user info via restful service.
 $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
-    $api->get('users', 'UsersController@index');
-    $api->get('users/{id}', 'UsersController@show');
+    $api->get('user', 'UserController@index');
+    $api->get('user/{id}', 'UserController@show');
 });
 
 //Just a test with auth check.
