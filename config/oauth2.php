@@ -34,7 +34,7 @@ return [
 
             // the code to run in order to verify the user's identity
             'callback' => 'App\Http\Controllers\VerifyController@verify',
-        ]
+        ],
     ],
 
     /*

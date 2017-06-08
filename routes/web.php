@@ -23,6 +23,6 @@ Route::get('/register',function(){
     $user = new App\User();
     $user->name="tester";
     $user->email="test@test.com";
-    $user->password = \Illuminate\Support\Facades\Hash::make("password");
+    $user->password = Hash::make("password");
     $user->save();
 });
